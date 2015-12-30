@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel \backend\models\search\PageSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('backend', 'Pages');
+$this->title = Yii::t('backend', 'Application');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="page-index">

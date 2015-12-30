@@ -173,12 +173,7 @@ class SignInController extends \yii\web\Controller
             $password = Yii::$app->security->generateRandomString(8);
             $user->setPassword($password);
             if ($user->save()) {
-                $profileData = [];
-                if ($client->getName() === 'facebook') {
-                    $profileData['firstname'] = ArrayHelper::getValue($attributes, 'first_name');
-                    $profileData['lastname'] = ArrayHelper::getValue($attributes, 'last_name');
-                }
-                $user->afterSignup($profileData);
+                $user->afterSignup();
                 $sentSuccess = Yii::$app->commandBus->handle(new SendEmailCommand([
                     'view' => 'oauth_welcome',
                     'params' => ['user'=>$user, 'password'=>$password],
@@ -199,7 +194,7 @@ class SignInController extends \yii\web\Controller
 
             } else {
                 // We already have a user with this email. Do what you want in such case
-                if ($user->email && User::find()->where(['email'=>$user->email])->count()) {
+                if (User::find()->where(['email'=>$user->email])->count()) {
                     Yii::$app->session->setFlash(
                         'alert',
                         [

@@ -22,18 +22,6 @@ $config = [
                     'class' => 'yii\authclient\clients\GitHub',
                     'clientId' => getenv('GITHUB_CLIENT_ID'),
                     'clientSecret' => getenv('GITHUB_CLIENT_SECRET')
-                ],
-                'facebook' => [
-                    'class' => 'yii\authclient\clients\Facebook',
-                    'clientId' => getenv('FACEBOOK_CLIENT_ID'),
-                    'clientSecret' => getenv('GITHUB_CLIENT_SECRET'),
-                    'scope' => 'email,public_profile',
-                    'attributeNames' => [
-                        'name',
-                        'email',
-                        'first_name',
-                        'last_name',
-                    ]
                 ]
             ]
         ],

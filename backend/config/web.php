@@ -1,6 +1,7 @@
 <?php
 $config = [
     'homeUrl'=>Yii::getAlias('@backendUrl'),
+	'language'=>'zh-CN',
     'controllerNamespace' => 'backend\controllers',
     'defaultRoute'=>'timeline-event/index',
     'controllerMap'=>[

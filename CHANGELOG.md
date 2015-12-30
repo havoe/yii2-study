@@ -3,10 +3,6 @@ Yii Starter Kit Change Log
 
 2.1.0 under development
 -----------------------
-- Enh #321: editOwnModel permission
-- Fixed #326
-- API Fixes
-- Fixed: password_confirm not validated
 - Enh: Shortcuts file added
 - Enh: Assets compression support
 - Enh #192: Docker support

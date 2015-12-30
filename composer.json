@@ -5,7 +5,6 @@
     "yii2",
     "framework",
     "start",
-    "cms",
     "application template",
     "yii2 advanced"
   ],
@@ -47,7 +46,12 @@
     "bower-asset/font-awesome": "^4.0",
     "bower-asset/html5shiv": "^3.0",
     "bower-asset/jquery-slimscroll": "^1.3",
-    "bower-asset/flot": "^0.8"
+    "bower-asset/flot": "^0.8",
+    "bower-asset/jquery": "@stable",
+    "bower-asset/bootstrap": "@stable",
+    "bower-asset/jquery-ui": "@stable",
+    "bower-asset/jquery.inputmask": "@stable",
+    "bower-asset/punycode": "@stable"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "^2.0.0",

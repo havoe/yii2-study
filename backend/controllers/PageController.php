@@ -32,6 +32,8 @@ class PageController extends Controller
      */
     public function actionIndex()
     {
+    	echo Yii::t('yii', 'An internal server error occurred.');
+    	die;
         $searchModel = new PageSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 

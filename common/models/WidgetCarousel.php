@@ -16,6 +16,7 @@ use Yii;
  */
 class WidgetCarousel extends \yii\db\ActiveRecord
 {
+
     const STATUS_DRAFT = 0;
     const STATUS_ACTIVE = 1;
 
@@ -27,16 +28,12 @@ class WidgetCarousel extends \yii\db\ActiveRecord
         return '{{%widget_carousel}}';
     }
 
-    /**
-     * @inheritdoc
-     */
     public function behaviors()
     {
         return [
             'cacheInvalidate'=>[
-                'class' => CacheInvalidateBehavior::className(),
-                'cacheComponent' => 'frontendCache',
-                'keys' => [
+                'class'=>CacheInvalidateBehavior::className(),
+                'keys'=>[
                     function ($model) {
                         return [
                             self::className(),

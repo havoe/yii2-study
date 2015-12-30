@@ -11,7 +11,6 @@
 - [Docker installation](#docker)
 - [Vagrant installation](vagrant.md)
 - [Demo users](#demo-users)
-- [Important-notes](#important-notes)
 
 ## Before you begin
 1. If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
@@ -75,7 +74,7 @@ Required PHP extensions:
 	STORAGE_URL     = http://storage.yii2-starter-kit.dev
 	```
 
-3. Run in command line
+3. Run
 ```
 php console/yii app/setup
 ```
@@ -98,14 +97,7 @@ FRONTEND_URL    = http://yii2-starter-kit.dev
 BACKEND_URL     = http://yii2-starter-kit.dev/backend
 STORAGE_URL     = http://yii2-starter-kit.dev/storage/web
 ```
-Adjust settings in `.env` file
-
-```
-FRONTEND_URL    = http://yii2-starter-kit.dev
-BACKEND_URL     = http://yii2-starter-kit.dev/backend
-STORAGE_URL     = http://yii2-starter-kit.dev/storage/web
-GLIDE_SIGN_KEY  = false
-```	
+	
 
 #### Configure your web server
 ##### Nginx
@@ -219,10 +211,3 @@ Password: manager
 
 Login: user
 Password: user
-```
-
-## Important notes
-- There is a VirtualBox bug related to sendfile that can lead to
-corrupted files, if not turned-off
-Uncomment this in your nginx config:
-```sendfile off;```
