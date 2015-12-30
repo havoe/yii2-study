@@ -8,15 +8,12 @@
 [![Dependency Status](https://www.versioneye.com/php/trntv:yii2-starter-kit/badge.svg)](https://www.versioneye.com/php/trntv:yii2-starter-kit)
 
 <!-- /BADGES -->
-
+为什么不是国内开发的
 This is Yii2 start application template.
 
 It was created and developing as a fast start for building an advanced sites based on Yii2. 
 
 It covers typical use cases for a new project and will help you not to waste your time doing the same work in every project
-
-## Before you start
-Please, consider helping project via [contributions](https://github.com/trntv/yii2-starter-kit/issues) or (donations)[#donations]. 
 
 ## TABLE OF CONTENTS
 - [Demo](#demo)
@@ -30,7 +27,6 @@ Please, consider helping project via [contributions](https://github.com/trntv/yi
 - [Testing](docs/testing.md)
 - [FAQ](#faq)
 - [How to contribute?](#how-to-contribute)
-- [Donations](#donations)
 - [Have any questions](#have-any-questions)
 
 ##DEMO
@@ -288,10 +284,7 @@ In view:
 - ``common\behaviors\LocaleBehavior`` - discover user locale from browser or account settings and set it
 - ``common\behaviors\LoginTimestampBehavior`` - logs user login time
 - ``common\validators\JsonValidator`` - validates a value to be a valid json
-- ``common\rbac\rule\OwnModelRule`` - simple rule for RBAC to check if the current user is model owner
-```php
-Yii::$app->user->can('editOwnModel', ['model' => $model]);
-```
+- ``common\rbac\OwnModelRule`` - simple rule for RBAC to check if the current user is model owner
 
 ##FAQ
 ### 1. Where is Gii?
@@ -301,12 +294,6 @@ Gii is available on:
 
 ##How to contribute?
 You can contribute in any way you want. Any help appreciated, but most of all i need help with docs (^_^)
-
-##Donations
-- [Paypal] (https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=X7UFA3F3ALPM8)
-- [Bitcoin] (https://www.coinbase.com/checkouts/2f1c1cb31c395e5aaafa1ba70003552e)
-- [WebMoney] (Z110052695454)
-- Other way: [eugene@terentev.net](mailto:eugene@terentev.net)
 
 ##Have any questions?
 mail to [eugene@terentev.net](mailto:eugene@terentev.net)
@@ -319,4 +306,3 @@ https://github.com/yiisoft/yii2/tree/master/docs
 This template was created mostly for developers NOT for end users.
 This is a point where you can begin your application, rather than creating it from scratch.
 Good luck!
-
