@@ -149,10 +149,12 @@ $config = [
         'adminEmail' => getenv('ADMIN_EMAIL'),
         'robotEmail' => getenv('ROBOT_EMAIL'),
         'availableLocales'=>[
+        	'zh-CN' => '中文',
             'en-US'=>'English (US)',
             'ru-RU'=>'Русский (РФ)',
             'uk-UA'=>'Українська (Україна)',
-            'es' => 'Español'
+            'es' => 'Español',
+        	
         ],
     ],
 ];
